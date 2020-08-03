@@ -1,0 +1,30 @@
+[user]
+	name = joshua.moors
+	email = joshua.moors@riotinto.com
+[color]
+	ui = true
+[merge]
+	conflictstyle = diff3
+[core]
+	editor = vim
+	sshCommand = plink -batch
+
+[difftool "sourcetree"]
+	cmd = '' \"$LOCAL\" \"$REMOTE\"
+[mergetool "sourcetree"]
+	cmd = "'' "
+	trustExitCode = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[web]
+	browser = chrome
+[browser "chrome"]
+	path = C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe
+[credential]
+	helper = wincred
+[http]
+	sslVerify = false
+	sslCAPath = H:/riotinto-proxy-ca.cer
