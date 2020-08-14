@@ -108,6 +108,9 @@ nnoremap <C-S-Tab> gT
 
 nnoremap <silent>  <leader>/ :nohls<CR>
 
+" changes all occurences of the word under cursor
+nnoremap <Leader>s :%s/\<<C-r><C-w>\>/
+
 set pythonthreedll=python37.dll
 "set pythonthreehome=C:\Users\Joshua.Moors\AppData\Local\Programs\Python\Python37-32\python.exe
 
