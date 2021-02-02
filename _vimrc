@@ -69,9 +69,11 @@ endif
 
 let g:material_theme_style = 'default'
 "let g:lightline = { 'colorscheme': 'default' }
-let g:lightline = { 'colorscheme': 'darculaOriginal' }
+"let g:lightline = { 'colorscheme': 'darculaOriginal' }
+let g:lightline = { 'colorscheme': 'gruvbox' }
 
-colorscheme darcula
+"colorscheme darcula
+colorscheme gruvbox
 highlight Cursor guifg=black guibg=#BBBBBB
 highlight iCursor guifg=black guibg=#BBBBBB
 set guicursor=n-v-c:block-Cursor-blinkwait800-blinkon500-blinkoff500
@@ -123,3 +125,8 @@ highlight ColorColumn guibg=#3d3d3d
 set colorcolumn=120
 set bs=2
 set guitablabel=%t
+
+"https://medium.com/@948/how-does-debugging-with-vim-and-gdb-3ab5ed0dcd0f
+let g:termdebug_popup = 0
+let g:termdebug_wide = 163
+
